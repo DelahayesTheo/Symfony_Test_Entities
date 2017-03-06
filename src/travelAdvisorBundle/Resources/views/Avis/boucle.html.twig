@@ -1,0 +1,7 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    {% for i in 1..x %}
+        {{ i }}&nbsp |
+    {% endfor %}
+    <p><a href="{{ path("voyage_homepage") }}">Vers la première vue</a></p>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+      <p>{{ message }}</p>
+    {% if avis is not empty %}
+        <p>{{ avis }}</p>
+        <p>{{ avis.etablissement }}</p>
+        <p>{{ avis.membre }}</p>
+    {% endif %}
+{% endblock %}

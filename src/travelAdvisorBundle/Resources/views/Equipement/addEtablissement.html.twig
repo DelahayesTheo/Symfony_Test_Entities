@@ -1,0 +1,13 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    {{ message }}
+    <div style="display:block;">{{ equipement }}
+        <ul>
+            {% for etablissement in equipement.etablisementEquip %}
+                <li>
+                    {{ etablissement }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

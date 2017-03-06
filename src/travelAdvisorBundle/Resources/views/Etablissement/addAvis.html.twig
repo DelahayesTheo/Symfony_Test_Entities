@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    {{ message }}
+    {% for etablissement in etablissements %}
+        <div style="display:block;">{{ etablissement }}
+            <ul>
+                {% for avis in etablissement.avis %}
+                    <li>
+                        {{ avis }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}
